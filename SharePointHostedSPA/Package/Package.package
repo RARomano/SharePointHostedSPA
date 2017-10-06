@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="8437ac14-dbbb-4f82-9843-144c699dd782" 
+        solutionId="8437ac14-dbbb-4f82-9843-144c699dd782" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SharePointHostedSPA"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="fbd358ba-94f4-4056-9693-672a6c76a9ac" />
+  </features>
+</package>
