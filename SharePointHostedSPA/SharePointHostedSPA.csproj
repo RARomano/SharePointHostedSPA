@@ -42,6 +42,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Pages\index.html" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -50,7 +51,6 @@
       <SharePointProjectItemId>{c6309823-860f-46af-99d5-6236650d3b36}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
-    <Content Include="Pages\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
@@ -58,7 +58,7 @@
       <SharePointProjectItemId>{de062669-f46e-4cf0-a21e-6295099cabd8}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\custom\App.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\SharePointProjectItem.spdata">

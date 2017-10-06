@@ -8,7 +8,7 @@
 >
   <Properties>
     <Title>SharePointHostedSPA</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/Pages/index.html?{StandardTokens}&amp;SPHostTitle={HostTitle}</StartPage>
   </Properties>
 
   <AppPrincipal>
