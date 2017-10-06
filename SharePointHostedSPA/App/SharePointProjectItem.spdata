@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="App\" Type="ElementManifest" />
+    <ProjectItemFile Source="AppIcon.png" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="Pages\index.html" Target="App\Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="scripts\vendor.css" Target="App\scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="scripts\vendor.js" Target="App\scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="scripts\main.js" Target="App\scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="scripts\main.js.map" Target="App\scripts\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

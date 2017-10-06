@@ -1,0 +1,16 @@
+﻿{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "types": [ "requirejs", "sharepoint" ]
+  },
+  "exclude": [
+    "bin",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="App">
+    <File Path="App\AppIcon.png" Url="App/AppIcon.png" ReplaceContent="TRUE" />
+    <File Path="App\Pages\index.html" Url="App/Pages/index.html" ReplaceContent="TRUE" />
+    <File Path="App\scripts\vendor.css" Url="App/scripts/vendor.css" ReplaceContent="TRUE" />
+    <File Path="App\scripts\vendor.js" Url="App/scripts/vendor.js" ReplaceContent="TRUE" />
+    <File Path="App\scripts\main.js" Url="App/scripts/main.js" ReplaceContent="TRUE" />
+    <File Path="App\scripts\main.js.map" Url="App/scripts/main.js.map" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,5 +1,6 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -21,6 +22,7 @@
     <WorkflowPartId>{209722f5-5b00-4ca1-a4e4-0d9edc5744c5}</WorkflowPartId>
     <CspkgPartId>{96ff2168-5636-419d-b5ad-30ab1f20d36e}</CspkgPartId>
     <SqlPackagePartId>{de062669-f46e-4cf0-a21e-6295099cabd8}</SqlPackagePartId>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,18 +44,24 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Pages\index.html" />
-    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <None Include="packages.config" />
-    <None Include="Pages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c6309823-860f-46af-99d5-6236650d3b36}</SharePointProjectItemId>
+    <Content Include="App\scripts\main.js" />
+    <Content Include="App\scripts\vendor.css" />
+    <Content Include="App\scripts\vendor.js" />
+    <Content Include="config\webpack.config.vendor.js" />
+    <Content Include="config\webpack.config.js" />
+    <Content Include="Elements.xml" />
+    <Content Include="App\Pages\index.html" />
+    <Content Include="src\components\app\app.vue.html" />
+    <Content Include="src\components\component1\component1.vue.html" />
+    <Content Include="src\components\component2\component2.vue.html" />
+    <None Include="App\scripts\main.js.map" />
+    <None Include="package.json" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d38f41d9-f72c-4b47-8068-3a44ac0d4d9b}</SharePointProjectItemId>
     </None>
-    <Content Include="Pages\Elements.xml" />
+    <None Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{de062669-f46e-4cf0-a21e-6295099cabd8}</SharePointProjectItemId>
     </None>
@@ -61,18 +69,11 @@
     <Content Include="Scripts\custom\App.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{698a8465-1802-4e1b-be07-6e00bef56ff5}</SharePointProjectItemId>
-    </None>
-    <Content Include="Content\Elements.xml" />
-    <Content Include="Content\App.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Images\AppIcon.png">
+    <Content Include="App\AppIcon.png">
       <OpcRelationship>manifest-icon</OpcRelationship>
     </Content>
-    <Content Include="Images\Elements.xml" />
-    <None Include="Images\SharePointProjectItem.spdata">
+    <Content Include="App\Elements.xml" />
+    <None Include="App\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{52a5286a-f600-49a6-8df9-430433d1777d}</SharePointProjectItemId>
     </None>
   </ItemGroup>
@@ -95,6 +96,13 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\boot.ts" />
+    <TypeScriptCompile Include="src\components\app\app.ts" />
+    <TypeScriptCompile Include="src\components\component1\component1.ts" />
+    <TypeScriptCompile Include="src\components\component2\component2.ts" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

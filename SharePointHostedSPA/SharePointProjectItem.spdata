@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.woff2" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.woff" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.ttf" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.svg" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="fonts\glyphicons-halflings-regular.eot" Target="fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="tsconfig.json" Type="ElementFile" />
+    <ProjectItemFile Source="package.json" Type="ElementFile" />
+    <ProjectItemFile Source="config\webpack.config.js" Target="config\" Type="ElementFile" />
+    <ProjectItemFile Source="config\webpack.config.vendor.js" Target="config\" Type="ElementFile" />
+    <ProjectItemFile Source="src\boot.ts" Target="src\" Type="ElementFile" />
+    <ProjectItemFile Source="src\components\component1\component1.vue.html" Target="src\components\component1\" Type="ElementFile" />
+    <ProjectItemFile Source="src\components\component1\component1.ts" Target="src\components\component1\" Type="ElementFile" />
+    <ProjectItemFile Source="src\components\app\app.ts" Target="src\components\app\" Type="ElementFile" />
+    <ProjectItemFile Source="src\components\app\app.vue.html" Target="src\components\app\" Type="ElementFile" />
+    <ProjectItemFile Source="src\components\component2\component2.ts" Target="src\components\component2\" Type="ElementFile" />
+    <ProjectItemFile Source="src\components\component2\component2.vue.html" Target="src\components\component2\" Type="ElementFile" />
+  </Files>
+</ProjectItem>
