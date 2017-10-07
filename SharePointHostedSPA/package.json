@@ -26,5 +26,9 @@
     "vue-template-compiler": "^2.2.2",
     "webpack": "^2.2.0",
     "webpack-hot-middleware": "^2.12.2"
+  },
+  "scripts": {
+    "build-dev": "webpack --config config/webpack.config.js && webpack --config config/webpack.config.vendor.js",
+    "build-prod": "webpack --config config/webpack.config.js --env=prod && webpack --config config/webpack.config.vendor.js --env=prod"
   }
 }
