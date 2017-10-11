@@ -9,8 +9,8 @@
     <ProjectItemFile Source="fonts\glyphicons-halflings-regular.eot" Target="fonts\" Type="ElementFile" />
     <ProjectItemFile Source="tsconfig.json" Type="ElementFile" />
     <ProjectItemFile Source="package.json" Type="ElementFile" />
-    <ProjectItemFile Source="config\webpack.config.js" Target="config\" Type="ElementFile" />
-    <ProjectItemFile Source="config\webpack.config.vendor.js" Target="config\" Type="ElementFile" />
+    <ProjectItemFile Source="webpack.config.js" Type="ElementFile" />
+    <ProjectItemFile Source="webpack.config.vendor.js" Type="ElementFile" />
     <ProjectItemFile Source="src\boot.ts" Target="src\" Type="ElementFile" />
     <ProjectItemFile Source="src\components\component1\component1.vue.html" Target="src\components\component1\" Type="ElementFile" />
     <ProjectItemFile Source="src\components\component1\component1.ts" Target="src\components\component1\" Type="ElementFile" />
