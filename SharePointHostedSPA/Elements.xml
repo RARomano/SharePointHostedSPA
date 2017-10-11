@@ -8,8 +8,8 @@
     <File Path="fonts\glyphicons-halflings-regular.eot" Url="fonts/glyphicons-halflings-regular.eot" ReplaceContent="TRUE" />
     <File Path="tsconfig.json" Url="tsconfig.json" ReplaceContent="TRUE" />
     <File Path="package.json" Url="package.json" ReplaceContent="TRUE" />
-    <File Path="config\webpack.config.js" Url="config/webpack.config.js" ReplaceContent="TRUE" />
-    <File Path="config\webpack.config.vendor.js" Url="config/webpack.config.vendor.js" ReplaceContent="TRUE" />
+    <File Path="webpack.config.js" Url="webpack.config.js" ReplaceContent="TRUE" />
+    <File Path="webpack.config.vendor.js" Url="webpack.config.vendor.js" ReplaceContent="TRUE" />
     <File Path="src\boot.ts" Url="src/boot.ts" ReplaceContent="TRUE" />
     <File Path="src\components\component1\component1.vue.html" Url="src/components/component1/component1.vue.html" ReplaceContent="TRUE" />
     <File Path="src\components\component1\component1.ts" Url="src/components/component1/component1.ts" ReplaceContent="TRUE" />

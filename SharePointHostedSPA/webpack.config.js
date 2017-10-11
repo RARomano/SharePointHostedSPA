@@ -2,7 +2,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin;
-const bundleOutputDir = '../app/scripts';
+const bundleOutputDir = './app/scripts';
 
 module.exports = (env) => {
   const isDevBuild = !(env && env.prod);
@@ -13,12 +13,12 @@ module.exports = (env) => {
     resolve: {
       extensions: ['.js', '.ts'],
       alias: {
-        'styles': path.resolve(__dirname, '../src/components/app/styles/'),
-        'fonts': path.resolve(__dirname, '../src/fonts/'),
+        'styles': path.resolve(__dirname, './src/components/app/styles/'),
+        'fonts': path.resolve(__dirname, './src/fonts/'),
         'vue$': 'vue/dist/vue.esm.js'
       }
     },
-    entry: { 'main': '../src/boot.ts' },
+    entry: { 'main': './src/boot.ts' },
     module: {
       rules: [
         {
